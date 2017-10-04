@@ -68,13 +68,17 @@ p.lead {
   margin-top: 0;
 }
 
+.code-line {
+  display: block;
+  margin-left: 10%;
+}
+
 /**
  * Buttons
  */
 a.btn, a.btn:active, a.btn:hover, a.btn:focus {
   display: block;
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   background: #2F3B48;
   color: #FFF;
@@ -83,6 +87,15 @@ a.btn, a.btn:active, a.btn:hover, a.btn:focus {
   margin-bottom: 10px;
   padding: 10px 15px 10px 15px;
   box-sizing: border-box;
+}
+
+@media (min-width: 585px) {
+  a.btn, a.btn:active, a.btn:hover, a.btn:focus {
+    display: block;
+    width: 49%;
+    float: left;
+    margin: 2px;
+  }
 }
 
 a.btn:hover, a.btn:focus {
