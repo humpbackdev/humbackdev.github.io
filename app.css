@@ -64,6 +64,10 @@ section#main, footer {
   box-sizing: border-box;
 }
 
+footer {
+  padding: 45px 20px 20px 20px;
+}
+
 p.lead {
   margin-top: 0;
 }
