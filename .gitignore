@@ -1,9 +1,4 @@
 # Untracked folders:
 
-css
-css/*
 node_modules
-
-# Untracked files:
-
-/index.html
+src
