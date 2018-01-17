@@ -42,7 +42,6 @@ gulp.task('html:dev', function () {
 //
 gulp.task('images:dev', function () {
   return gulp.src('src/**/*.{png,jpg,jpeg,gif,svg}')
-    // .pipe(gulp.dest('.tmp'))
     .pipe(gulp.dest('.'))
     .pipe(connect.reload())
 })
@@ -56,7 +55,6 @@ gulp.task('styles:dev', function () {
     .pipe(sass(eyeglass(sassOptions)).on('error', sass.logError))
     .pipe(prefix(["last 2 versions"]))
     .pipe(sourcemaps.write())
-    // .pipe(gulp.dest('.tmp/css'))
     .pipe(gulp.dest('css'))
     .pipe(connect.reload())
 })
