@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Humpback - A Docker-based environment to build Drupal 8 sites.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+
+  <header class="site-banner" role="banner">
+    <div class="limiter">
+      <img src="assets/images/logo.png" class="site-banner__logo" alt="Humpback Logo">
+      <h1 class="site-banner__title">Meet Humpback</h1>
+      <p class="site-banner__subtitle">A Docker-based environment that makes it easy to build Drupal 8 sites.</p>
+      <div class="site-banner__action-links">
+        <div class="site-banner__link">
+          <a class="site-banner__button site-banner__button-secondary" href="#">Humpback Env</a>
+          <p class="site-banner__caption">Drupal 8 development environment</p>
+        </div>
+        <div class="site-banner__link">
+          <a class="site-banner__button" href="#">Humpback Gen</a>
+          <p class="site-banner__caption">Drupal 8 site and environment generator</p>
+        </div>
+      </div>
+      <img src="assets/images/algas.png" class="site-banner__alga" alt="">
+      <img src="assets/images/fish.png" class="site-banner__fish" alt="">
+    </div>
+  </header>
+  <main class="site-content" role="main">
+    <section class="general-info">
+      <div class="limiter">
+        <div class="general-info__column general-info__getting-started">
+          <h2 class="general-info__title">Getting started</h2>
+          <p>Humpback generator is extremely easy to use. Just install it from npm project page and generate a project in a new folder:</p>
+          <pre>
+            npm install -g yo <br>
+            npm install -g generator-humpback
+          </pre>
+          <p>And then:</p>
+          <pre>
+            mkdir my-project && cd my-project <br>
+            yo humpback
+          </pre>
+          <p class="emphasis__underline"><strong>That’s it!</strong></p>
+        </div>
+        <div class="general-info__column general-info__why-humpback">
+          <h2 class="general-info__title">Why use Humpback?</h2>
+          <p>Let's face it: Drupal development requires several dependencies and they increase if you start thinking about performance: solr, memcached, varnish, etc. Taking time to configure each one of them is tedious and reduces the project time. With Humpback, you won't worry about this and you'll be able to focus in what really matters: your project development.</p>
+
+          <p>This tool integrate several utilities that you can use in your project, among them varnish, solr, memcached, ngrok, mailhog, drush, drupal console and some others that will make your life easier when developing with Humpback.</p>
+
+          <p class="emphasis__why"><strong>Sounds cool? Give it a try!</strong></p>
+          <img class="general-info__wave" src="assets/images/waves-light.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="usage">
+      <div class="limiter">
+        <div class="usage__intro">
+          <h2 class="usage__intro-title">Usage</h2>
+          <p>In the generated project, you'll have the necessary documentation to continue your journey. You also can access that documentation in USAGE.md</p>
+        </div>
+        <div class="usage__menu-container">
+          <div class="usage__nav-caption">
+            <p>You can also follow these links to get more information:</p>
+          </div>
+          <nav class="usage__menu">
+            <a href="https://github.com/humpbackdev/humpback" class="usage__menu-link">Humpback Env's Github</a>
+            <a href="https://github.com/humpbackdev/generator-humpback" class="usage__menu-link">Humpback Generator’s Github</a>
+            <a href="#" class="usage__menu-link">NPM</a>
+            <a href="#" class="usage__menu-link">We’re on Twitter too!</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="site-secondary">
+      <div class="limiter">
+        <div class="site-secondary__column">
+          <h2 class="site-secondary__title">
+            Where does the name come from?
+          </h2>
+          <p class="site-secondary__content">
+            Docker is a whale, so, we wanted to be a whale too. While researching for whales, we loved the idea of naming our project as Humpback because that's one of the species most seen in our country: <strong>Costa Rica</strong>.
+          </p>
+        </div>
+        <div class="site-secondary__column">
+          <h2 class="site-secondary__title">
+            Special thanks to...
+          </h2>
+          <p class="site-secondary__content">
+            The #Manateam for creating and maintaining Humpback, specially to:
+          </p>
+          <ul>
+            <li><a href="https://www.drupal.org/u/dharizza" target="_blank">Dharizza Espinach</a></li>
+            <li><a href="https://www.drupal.org/u/kporras07" target="_blank">Kevin Porras</a></li>
+          </ul>
+        </div>
+        <div class="site-secondary__column">
+          <h2 class="site-secondary__title">
+            Contributing
+          </h2>
+          <p class="site-secondary__content">
+            Please use the project, fork it, and submit PRs. We are responsive and will review them as soon as possible!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__column site-footer__column-credits">
+      <h3 class="site-footer__title">
+        Credits and usage
+      </h3>
+      <div class="site-footer__content">
+        <p>Humpback is a trademark of Estudio Manatí S.A. You are free to use the logo to promote the Humpback product as long as you do not modify it in any way.</p>
+        <p>Drupal is a registered trademark of Dries Buytaert.</p>
+        <p>Docker and the Docker logo are trademarks or registered trademarks of Docker, Inc. in the United States and/or other countries. Docker, Inc. and other parties may also have trademark rights in other terms used herein.</p>
+      </div>
+    </div>
+    <div class="site-footer__column site-footer__column-company">
+      <p class="site-footer__built-by">
+        Built by <a href="https://www.estudiomanati.com/" target="_blank">Manatí</a> to the world
+      </p>
+      <img class="site-footer__waves" src="assets/images/waves.png" alt="">
+    </div>
+    <div class="closure_title">
+      Embrace Open Source
+    </div>
+  </footer>
+  </body>
+</html>
