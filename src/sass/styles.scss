@@ -1,0 +1,153 @@
+// Font face
+
+@font-face {
+  font-family: 'Bariol';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bariol"), url("/assets/fonts/bariol/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/bariol/bariol_regular-webfont.woff") format("woff"), url("/assets/fonts/bariol/bariol_regular-webfont.ttf") format("truetype"), url("/assets/fonts/bariol/bariol_regular-webfont.svg#AlegreyaSans") format("svg"); }
+
+@font-face {
+  font-family: 'Bariol';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Bariol"), url("/assets/fonts/bariol/bariol_regular_italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/bariol/bariol_regular_italic-webfont.woff") format("woff"), url("/assets/fonts/bariol/bariol_regular_italic-webfont.ttf") format("truetype"), url("/assets/fonts/bariol/bariol_regular_italic-webfont.svg#AlegreyaSans") format("svg"); }
+
+@font-face {
+  font-family: 'Bariol';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bariol"), url("/assets/fonts/bariol/bariol_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/bariol/bariol_bold-webfont.woff") format("woff"), url("/assets/fonts/bariol/bariol_bold-webfont.ttf") format("truetype"), url("/assets/fonts/bariol/bariol_bold-webfont.svg#AlegreyaSans") format("svg");
+  }
+
+/**
+ * Google Fonts
+ *
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// Rem font-size Mixins
+//
+// Adds px value for fallback - then rem value
+// use example =   @include font-size(1.6); = 1.6rem / 16px
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+/** End Extensions */
+
+
+/**
+ * Global Variables
+ *
+ */
+
+
+// Breakpoints
+$small: 450px;
+$medium: 800px;
+$large: 1000px;
+$full-width: 1200px;
+
+// Colors
+$primary-font-color: #555;
+$heading-darkest: #192F44;
+$button-primary-bg: #E35A42;
+$button-secondary-bg: #9F2165;
+$light-gray: #F2F2F2;
+$managreen: #35BBA0;
+
+$body-bg: #fff;
+
+$anchor-remote: #6363ff;
+$anchor-local: #FF9900;
+
+$content-bg: #111;
+
+// Site layout options
+$body-max-width: 1440px;
+
+// Fonts Families
+$heading-font: 'Bariol', Arial, sans-serif;
+$main-font: 'Roboto', Arial, sans-serif;
+
+/** End Global Variables */
+
+/**
+ * App-wide Styles
+ */
+
+ html {
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  color: $primary-font-color;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+  position: relative;
+  @include font-size(1.4);
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+p {
+  @include font-size(1.6)
+}
+
+a {
+  text-decoration: none;
+  color: $anchor-local;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  margin: 0 0 10px;
+}
+
+.button {
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  @include font-size(1.8)
+  font-family: $heading-font;
+}
+
+.limiter {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-content {}
+
+// Component styles are injected through grunt
+/* inject:scss */
+@import 'partials/banner.scss';
+@import 'partials/intro.scss';
+@import 'partials/secondary.scss';
+@import 'partials/usage.scss';
+@import 'partials/footer.scss';
+/* endinject */
