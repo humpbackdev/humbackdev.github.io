@@ -1,0 +1,25 @@
+// secondary
+
+.site-secondary {
+  margin-bottom: 20px;
+  .limiter {
+    @media screen and (min-width: $medium) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+  }
+}
+.site-secondary__column {
+  @media screen and (min-width: $medium) {
+    width: 26%;
+    &:first-child {
+      width: 42%;
+    }
+  }
+}
+.site-secondary__title {
+  @include font-size(2.5);
+  color: $heading-darkest;
+}
