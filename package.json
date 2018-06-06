@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Base environment for static site development",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "compile": "gulp compile"
   },
   "author": "Andrés Díaz Soto <andres.diaz.soto@gmail.com>",
   "license": "MIT",

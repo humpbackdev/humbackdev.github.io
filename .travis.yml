@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 8
+  - 6
+before_script:
+  - npm install
+before_deploy:
+  - cd $TRAVIS_BUILD_DIR
+  - npm install
+script:
+  - 'npm run compile'
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: source

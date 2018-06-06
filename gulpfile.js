@@ -82,3 +82,4 @@ gulp.task('watch', function () {
 // Task declarations.
 //
 gulp.task('dev', ['html:dev', 'images:dev', 'styles:dev', 'connect', 'watch'])
+gulp.task('compile', ['html:dev', 'images:dev', 'styles:dev'])
