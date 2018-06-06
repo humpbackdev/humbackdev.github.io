@@ -8,13 +8,13 @@ before_deploy:
   - cd $TRAVIS_BUILD_DIR
   - npm install
   - npm run compile
-  - cp master.gitignore .gitignore
+  - mv master.gitignore .gitignore
 script:
   - 'npm run compile'
 deploy:
   provider: pages
   skip-cleanup: true
-  keep-history: false
+  keep-history: true
   github-token: $GITHUB_TOKEN
   fqdn: humpbackdev.com
   on:
