@@ -1,8 +1,9 @@
 # Untracked folders:
-
 node_modules
 src
 
+# Untracked files
+.travis.yml
 gulpfile.js
 package.json
-package-lock.json
+package-log.json
