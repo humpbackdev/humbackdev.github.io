@@ -65,7 +65,7 @@ gulp.task('styles:dev', function () {
 gulp.task('connect', function () {
   connect.server({
     livereload: true,
-    root: '.tmp'
+    root: '.'
   })
 })
 
